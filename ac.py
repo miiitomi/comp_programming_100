@@ -6,7 +6,7 @@ def main():
 
     with open(filename, 'r') as f:
         fileText = f.read()
-        after = fileText.replace(f'| {promlem_number} |', f'| **{promlem_number}** |')
+        after = fileText.replace(f'| {promlem_number} |', f'| ~~{promlem_number}~~ |')
 
     with open(filename, 'w') as f:
         f.write(after)
